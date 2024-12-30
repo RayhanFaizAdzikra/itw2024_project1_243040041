@@ -487,3 +487,21 @@ section.active {
   margin-left: 1rem;
   font-size: 2rem;
 }
+
+.hobby-main {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 100vw;
+  grid-template-columns: 35% 35% 35%;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.hobby-main img {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
+}
