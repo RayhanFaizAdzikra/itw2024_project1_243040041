@@ -15,7 +15,7 @@
 
 <body>
 
-  <header>
+  <header class="active">
     <a href="#" class="logo">Rayhan</a>
 
     <i class='bx bx-menu' id="menu-icon"></i>"
@@ -29,7 +29,16 @@
     </nav>
   </header>
 
-  <section class="home">
+  <div class="bars-box active">
+    <div class="bar" style="--i:6;"></div>
+    <div class="bar" style="--i:5;"></div>
+    <div class="bar" style="--i:4;"></div>
+    <div class="bar" style="--i:3;"></div>
+    <div class="bar" style="--i:2;"></div>
+    <div class="bar" style="--i:1;"></div>
+  </div>
+
+  <section class="home active">
     <div class="home-detail">
       <h1>Rayhan Faiz Adzikra</h1>
       <h2>I,am a
@@ -308,13 +317,60 @@
     </div>
   </section>
 
-  <section class="hobby active">
+  <section class="hobby">
     <h2 class="heading">My <span>Hobby</span></h2>
     <div class="hobby-main">
       <img src="img/hobby1.jpg">
       <img src="img/hobby2.jpg">
       <img src="img/hobby5.jpg">
       <img src="img/hobby6.jpg">
+    </div>
+  </section>
+
+  <section class="conctact">
+    <div class="contact-container">
+      <div class="contact-box">
+        <h2>Let's Work Togerther</h2>
+        <p>If there is a problem, you can contact.</p>
+        <div class="contact-detail">
+          <i class='bx bxs-phone'></i>
+          <div class="detail">
+            <p>Phone</p>
+            <p>(+12) 345 678 901</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <i class='bx bxs-envelope' ></i>
+          <div class="detail">
+            <p>Email</p>
+            <p>rayhanbaedeuh@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <i class='bx bx-map' ></i>
+          <div class="detail">
+            <p>Address</p>
+            <p>Cihanjaro Village, Kuningan City</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="contact-box">
+        <form action="">
+          <h2 class="heading">Cantact <span>Me!</span></h2>
+          <div class="field-box">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Phone Number" required>
+            <input type="text" placeholder="Email Subject" required>
+            <textarea name="" id="" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
     </div>
   </section>
 
