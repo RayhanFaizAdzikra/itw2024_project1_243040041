@@ -696,8 +696,37 @@ section.active {
     display: none;
   }
 
+  nav.active {
+    display: block;
+
+  }
+
   nav a {
     display: block;
     margin: 4rem 0;
+  }
+
+  .home {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .home-img .img-box {
+    width: 35rem;
+    height: 35rem;
+    margin-top: 5rem;
+  }
+
+  .resume-container{
+    gap: 3rem;
+  }
+
+  .hobby-main {
+    justify-content: center;
+  }
+
+  .contact-box .field-box {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
