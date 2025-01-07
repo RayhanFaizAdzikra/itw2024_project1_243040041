@@ -657,98 +657,120 @@ section.active {
   cursor: pointer;
 }
 
+/* ... (Your initial CSS code) ... */
+
+/* Broader Media Query for large desktops (above 1200px) - Optional but useful */
+@media screen and (min-width: 1201px) {
+  /* Here you can add specific styles for very large screens if needed */
+  .home-img .img-box {
+      width: 28vw; /* Slightly larger on wide screens */
+      height: 28vw;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   html {
-    font-size: 55%;
+      font-size: 55%;
+  }
+
+  .services-container {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Important for service responsiveness */
   }
 }
 
 @media screen and (max-width: 992px) {
   header {
-   padding: 2rem 4%;
+      padding: 2rem 4%;
   }
 
   section {
-    padding: 10rem 4% 2rem;
+      padding: 10rem 4% 2rem;
+  }
+
+  .resume-container {
+      grid-template-columns: 1fr; /* Stacks resume sections on medium screens */
+      gap: 3rem;
+  }
+
+  .hobby-main {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid for hobby images */
+      padding: 20px; /* Added padding to prevent images from touching edges */
+  }
+
+  .hobby-main img {
+      width: 100%; /* Hobby images now take full container width */
+      height: auto; /* Maintains image aspect ratio */
   }
 }
 
 @media screen and (max-width: 810px) {
   .contact-box .field-box {
-    grid-template-columns: 1fr;
+      grid-template-columns: 1fr; /* Contact form fields on a single column */
   }
 }
 
 @media screen and (max-width: 768px) {
   #menu-icon {
-    display: block;
+      display: block;
   }
+
   nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 1rem 0;
-    background: var(--bg-color);
-    border-top: .1rem solid rgba(0, 0, 0, .2);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-    text-align: center;
-    display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 0;
+      background: var(--bg-color);
+      border-top: .1rem solid rgba(0, 0, 0, .2);
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+      text-align: center;
+      display: none;
   }
 
   nav.active {
-    display: block;
-
+      display: block;
   }
 
   nav a {
-    display: block;
-    margin: 4rem 0;
+      display: block;
+      margin: 4rem 0;
   }
 
   .home {
-    flex-direction: column-reverse;
-    justify-content: center;
-    gap: 2rem;
+      flex-direction: column-reverse;
+      justify-content: center;
+      gap: 2rem;
   }
 
   .home-img .img-box {
-    width: 35rem;
-    height: 35rem;
-    margin-top: 5rem;
+      width: 35rem;
+      height: 35rem;
+      margin-top: 5rem;
   }
 
-  .resume-container{
-    gap: 3rem;
+  .contact-container {
+      grid-template-columns: 1fr; /* Contact section occupies full width */
   }
-
-  .hobby-main {
-    justify-content: center;
-  }
-
-  .contact-box .field-box {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-#menu-icon {
-  justify-content:
 }
 
 @media screen and (max-width: 600px) {
   .home-img .img-box {
-    width: 30rem;
-    height: 30rem;
+      width: 30rem;
+      height: 30rem;
   }
 
-  .contact-box .field-box {
-    grid-template-columns: 1fr;
+  .heading {
+      font-size: 3.5rem; /* Heading resizing */
+  }
+
+  .resume-list {
+      grid-template-columns: 1fr; /* Resume items on a single column */
   }
 }
 
 @media screen and (max-width: 450px) {
   html {
-    font-size: 50%;
+      font-size: 50%;
   }
 }
 
@@ -758,15 +780,15 @@ section.active {
   .resume-box .heading,
   .resume-box .desc,
   .resume-detail.about .resume-item {
-    text-align: center;
+      text-align: center;
   }
+}
 
   .home-detail .btn-sci {
-    flex-direction: column-reverse;
+      flex-direction: column-reverse;
   }
 
   .home-detail .btn-sci .sci {
-    margin-left: 0;
-    margin-bottom: 2rem;
+      margin-left: 0;
+      margin-bottom: 2rem;
   }
-}
